@@ -1,0 +1,22 @@
+{
+  "name": "inngest-debug-test-package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-step-throws": "vitest run -t 'step-throws'",
+    "test-step-runs-twice": "vitest run -t 'step-runs-twice'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inngest": "^3.25.0",
+    "vitest": "^2.1.4"
+  },
+  "devDependencies": {
+    "@inngest/test": "^0.1.0",
+    "@types/node": "^22.9.0",
+    "typescript": "^5.6.3"
+  }
+}
