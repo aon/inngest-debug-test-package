@@ -11,11 +11,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inngest": "^3.25.0",
+    "inngest": "3.25.1",
     "vitest": "^2.1.4"
   },
   "devDependencies": {
-    "@inngest/test": "^0.1.0",
+    "@inngest/test": "0.1.1",
     "@types/node": "^22.9.0",
     "typescript": "^5.6.3"
   }

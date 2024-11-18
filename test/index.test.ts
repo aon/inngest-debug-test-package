@@ -8,8 +8,9 @@ describe("step-throws", () => {
   });
 
   it("should throw if the step throws", async () => {
-    const result = testEngine.execute();
-    await expect(result).rejects.toThrow();
+    const result = await testEngine.execute();
+    expect(result.error).toBeDefined();
+    expect((result.error as Error).message).toBe("This is an error");
   });
 });
 

@@ -9,15 +9,15 @@ importers:
   .:
     dependencies:
       inngest:
-        specifier: ^3.25.0
-        version: 3.25.0(typescript@5.6.3)
+        specifier: 3.25.1
+        version: 3.25.1(typescript@5.6.3)
       vitest:
         specifier: ^2.1.4
         version: 2.1.4(@types/node@22.9.0)
     devDependencies:
       '@inngest/test':
-        specifier: ^0.1.0
-        version: 0.1.0(inngest@3.25.0(typescript@5.6.3))
+        specifier: 0.1.1
+        version: 0.1.1(typescript@5.6.3)
       '@types/node':
         specifier: ^22.9.0
         version: 22.9.0
@@ -165,10 +165,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@inngest/test@0.1.0':
-    resolution: {integrity: sha512-Xc5dNAlenKUq9AQ0L3ojX1whp+u+H4ckk8vUaChJJsP095xb4efoEEyMHIqhLvWoJHjgb9Bxi5jtPSSlCX3kEQ==}
-    peerDependencies:
-      inngest: ^3.22.12
+  '@inngest/test@0.1.1':
+    resolution: {integrity: sha512-sGs9rQv3XnEtWfXGqc1ARWle+UuZSzyDgxGHHe9O8gMhFdhajj5ci5wRYSacwYq4nRVf4GGfnz3fxx4/IDuuTg==}
 
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
@@ -385,8 +383,8 @@ packages:
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
 
-  inngest@3.25.0:
-    resolution: {integrity: sha512-FjpAC6UgmVtbc24uo+/qr6+c8x4hmychmXSjHdlvMyhIrrr+it9gK0CDJxgkWJcKgdNRQ1xg0e34SEHBO3MfLw==}
+  inngest@3.25.1:
+    resolution: {integrity: sha512-d/0Fa9A3MeqSDh+N0cH628vi4uE2dQbrsTT684ilKMtIYNhWhkSh5xswQtCfOE8Wr2zxmmuQTfB+sdk6sDy+OA==}
     engines: {node: '>=14'}
     peerDependencies:
       '@sveltejs/kit': '>=1.27.3'
@@ -672,11 +670,24 @@ snapshots:
   '@esbuild/win32-x64@0.21.5':
     optional: true
 
-  '@inngest/test@0.1.0(inngest@3.25.0(typescript@5.6.3))':
+  '@inngest/test@0.1.1(typescript@5.6.3)':
     dependencies:
-      inngest: 3.25.0(typescript@5.6.3)
+      inngest: 3.25.1(typescript@5.6.3)
       tinyspy: 3.0.2
       ulid: 2.3.0
+    transitivePeerDependencies:
+      - '@sveltejs/kit'
+      - '@vercel/node'
+      - aws-lambda
+      - encoding
+      - express
+      - fastify
+      - h3
+      - hono
+      - koa
+      - next
+      - supports-color
+      - typescript
 
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
@@ -875,7 +886,7 @@ snapshots:
 
   inherits@2.0.4: {}
 
-  inngest@3.25.0(typescript@5.6.3):
+  inngest@3.25.1(typescript@5.6.3):
     dependencies:
       '@types/debug': 4.1.12
       canonicalize: 1.0.8
