@@ -11,6 +11,10 @@ export const stepThrows = inngest.createFunction(
   },
   [],
   async ({ step }) => {
+    await step.run("this-step-doesnt-throw", () => {
+      console.log("This step doesn't throw");
+    });
+    
     await step.run("throw-error", () => {
       console.log("Throwing error");
       throw new Error("This is an error");
